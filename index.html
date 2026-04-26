@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harshal Bhange | Student Portfolio</title>
+
+<style>
+:root {
+    --bg: #0b0e14;
+    --surface: #161b22;
+    --text: #c9d1d9;
+    --accent: #4daafc;
+    --border: #30363d;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Navigation */
+nav {
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    text-align: center;
+}
+
+nav a {
+    color: var(--text);
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: var(--accent);
+}
+
+/* Layout */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* HEADER WITH PHOTO */
+header.hero {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 2rem;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid var(--accent);
+}
+
+/* Headings */
+h1 { color: var(--accent); margin: 0; font-size: 2.2rem; }
+
+h2 {
+    color: var(--accent);
+    border-left: 3px solid var(--accent);
+    padding-left: 10px;
+    margin-top: 2rem;
+}
+
+.sub-text { color: #8b949e; margin-top: 5px; }
+
+/* Sections */
+.card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    padding: 1.5rem;
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+}
+
+.item-title { font-weight: bold; color: #fff; display: block; }
+.item-meta { font-size: 0.85rem; color: #8b949e; }
+
+ul { padding-left: 20px; }
+li { margin-bottom: 8px; }
+
+.tag-container { margin-top: 10px; }
+
+.tag {
+    font-size: 0.75rem;
+    background: #21262d;
+    border: 1px solid var(--border);
+    padding: 3px 8px;
+    border-radius: 12px;
+    margin-right: 5px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 3rem;
+    color: #8b949e;
+    font-size: 0.8rem;
+}
+
+/* MOBILE FIX */
+@media (max-width: 600px) {
+
+    .container {
+        width: 92%;
+        padding: 1rem;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 6px;
+        font-size: 13px;
+    }
+
+    header.hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-pic {
+        width: 90px;
+        height: 90px;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<a href="#about">About</a>
+<a href="#education">Education</a>
+<a href="#projects">Projects</a>
+<a href="#achievements">Achievements</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+
+<!-- HEADER -->
+<header class="hero">
+
+<img src="profile.png" alt="Profile Photo" class="profile-pic">
+
+<div>
+<h1>Harshal Tushar Bhange</h1>
+
+<p class="sub-text">
+B.Tech Computer Engineering (Software Engineering) Student @ MITAOE, Pune
+</p>
+
+<p style="color:#4daafc; font-size:14px;">
+Exploring physics, mathematics, and computing
+</p>
+
+</div>
+
+</header>
+
+<section id="about">
+<h2>About Me</h2>
+<p>I am a Computer Engineering student with a deep interest in how mathematics and physics intersect with software engineering. I enjoy exploring scientific thinking to solve practical problems and modeling real-world systems through computing.</p>
+<p>Outside of my studies, I am an active table tennis player and enjoy listening to music to unwind.</p>
+</section>
+
+<section id="education">
+<h2>Education</h2>
+
+<div class="card">
+<span class="item-title">B.Tech in Computer Engineering (Software Engineering) - Ongoing</span>
+<span class="item-meta">MIT Academy of Engineering (MITAOE), Pune</span>
+</div>
+
+<div class="card">
+<span class="item-title">12th (HSC) - Grade A</span>
+<span class="item-meta">M.P. International School & Junior College</span>
+</div>
+
+<div class="card">
+<span class="item-title">10th (SSC) - 90.80%</span>
+<span class="item-meta">Maharashtra State Board</span>
+</div>
+
+</section>
+
+<section id="projects">
+<h2>Projects</h2>
+
+<div class="card">
+<span class="item-title">ZIR Mathematical Model Poster</span>
+<p>Created a poster explaining the Zombie–Infected–Removed (ZIR) model using calculus and differential equations.</p>
+
+<div class="tag-container">
+<span class="tag">Calculus</span>
+<span class="tag">Modeling</span>
+<span class="tag">Physics</span>
+</div>
+</div>
+
+<div class="card">
+<span class="item-title">Visitor Parking Management System</span>
+<p>A design thinking project to build a website for managing visitor parking efficiently.</p>
+
+<div class="tag-container">
+<span class="tag">Web</span>
+<span class="tag">UI/UX</span>
+<span class="tag">Design Thinking</span>
+</div>
+</div>
+
+</section>
+
+<section id="achievements">
+<h2>Achievements & Interests</h2>
+
+<ul>
+<li>Scholarship holder in 5th Standard Scholarship Exam</li>
+<li>Scholarship holder in 8th Standard Scholarship Exam</li>
+<li>MTSE Talent Search Examination Certificate</li>
+<li>English Advance Examination Certificate</li>
+</ul>
+
+<p><strong>Interests:</strong> Physics, Scientific Thinking, Table Tennis, Music</p>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<p>Email: <a href="mailto:bhangeharshal88@gmail.com" style="color: var(--accent);">bhangeharshal88@gmail.com</a></p>
+</section>
+
+<footer>
+<p>Designed by Harshal Bhange • 2026</p>
+</footer>
+
+</div>
+
+</body>
+</html>
